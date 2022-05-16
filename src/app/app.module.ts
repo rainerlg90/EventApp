@@ -11,7 +11,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
-import { MatIconModule } from '@angular/material/icon'; 
+import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'; 
+import { GoogleMapsModule } from '@angular/google-maps'; 
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     HttpClientModule,
     MatTableModule, MatPaginatorModule, MatSortModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressSpinnerModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
