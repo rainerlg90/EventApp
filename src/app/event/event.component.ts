@@ -18,7 +18,7 @@ export class EventComponent implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
   markers: any[] = []
-  center: google.maps.LatLng
+  // center: google.maps.LatLng
   gMap: any;
 
   constructor(
@@ -34,7 +34,7 @@ export class EventComponent implements OnInit, AfterViewInit {
     this.isLoading = true;
 
     // G Map
-    this.center = new google.maps.LatLng(39.768197, -86.157136);
+    // this.center = new google.maps.LatLng(39.768197, -86.157136);
 
     // Get events
     this.eventSrv.getEventsScrapper()
