@@ -10,7 +10,7 @@ export class EventService {
   constructor(private http: HttpClient) { }
 
   public getEventsScrapper():  Observable<Object[]>{
-    return this.http.get<Object[]>('http://localhost:9001/events')
+    return this.http.get<Object[]>('https://eventapp.rainerledesma1.repl.co/events')
   }
 
 }
